@@ -1,0 +1,27 @@
+{
+  "name": "netmera-cordova-wrapper",
+  "version": "1.0.0",
+  "description": "Ionic Native plugin wrapper for cordova-plugin-netmera ",
+  "main": "install.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limxona/netmera-cordova-wrapper.git"
+  },
+  "keywords": [
+    "netmera",
+    "cordova",
+    "ionic"
+  ],
+  "author": "limxona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limxona/netmera-cordova-wrapper/issues"
+  },
+  "homepage": "https://github.com/limxona/netmera-cordova-wrapper#readme",
+  "devDependencies": {},
+  "dependencies": {
+  }
+}
