@@ -1,17 +1,19 @@
 import { IonicNativePlugin } from '@ionic-native/core';
+import { Observable } from 'rxjs';
 export declare class NetmeraPlugin extends IonicNativePlugin {
     start(netmeraKey: string, fcmKey: string, baseUrl?: string): void;
     requestPushNotificationAuthorization(): void;
-    subscribePushNotification(): Promise<NetmeraPush>;
-    subscribeOpenUrl(): Promise<string>;
-    subscribePushClick(): Promise<NetmeraPush>;
-    subscribePushButtonClick(): Promise<NetmeraPush>;
+    subscribePushNotification(): Observable<NetmeraPush>;
+    subscribeOpenUrl(): Observable<string>;
+    subscribePushClick(): Observable<NetmeraPush>;
+    subscribePushButtonClick(): Observable<NetmeraPush>;
     sendEvent(event: NetmeraEvent): void;
     fetchInboxUsingFilter(filter: NetmeraInboxFilter): Promise<NetmeraInbox>;
     fetchNextPage(): Promise<NetmeraInbox>;
     countForStatus(status: NetmeraPushStatus): Promise<number>;
     updatePushStatus(index: number, length: number, status: NetmeraPushStatus): Promise<boolean>;
     updateUser(user: NetmeraUser): void;
+    requestLocationAuthorization(): void;
 }
 export interface NetmeraInboxFilter {
     status?: number;
